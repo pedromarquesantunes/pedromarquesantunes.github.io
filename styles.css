@@ -24,6 +24,33 @@
     src: url(type/PTSansNarrow-Regular.ttf);
 }
 
+.cvText a,
+.cvText a:visited {
+    color: black;
+}
+
+.cvText {
+    font-family: "PT Sans Narrow";
+    font-size: 1.5em;
+    text-align: center;
+
+    background-color: white;
+    position: fixed;
+    margin: auto;
+    left: 300px;
+    right: 0px;
+    line-height: 70px;
+    top: 0;
+}
+
+.cvText img {
+    height: 20px;
+}
+
+.CV {
+    margin-top: 20px;
+}
+
 
 /*   
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -105,7 +132,7 @@ nav {
     font-family: "PT Sans";
     list-style: none;
     font-size: 0.8em;
-    line-height: 1.2em;
+    line-height: 1.5em;
     margin-left: 15px;
 }
 
@@ -146,7 +173,8 @@ a:hover {
     width: 100%;
 }
 
-.imageGrid , .imageGridEx{
+.imageGrid,
+.imageGridEx {
     column-count: 3;
     column-gap: 2vw;
     margin-left: 300px;
@@ -179,7 +207,8 @@ a:hover {
     width: 100%;
 }
 
-.imageGrid img, .imageGridEx img {
+.imageGrid img,
+.imageGridEx img {
     margin-bottom: 30px;
     width: 100%;
     /* margin: 1vw 0; */
@@ -199,18 +228,20 @@ a:hover {
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     height: 0;
-  }
-  .video-container iframe {
+}
+
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
+}
 
-  
+
 
 .twoColumnText {
     font-family: "PT Sans";
@@ -254,12 +285,13 @@ a:hover {
 
 
 
-.mobileNav, .mobileNavIndex {
+.mobileNav,
+.mobileNavIndex {
     display: none;
 }
 
 
-.pedro{
+.pedro {
     display: none;
 }
 
@@ -273,7 +305,19 @@ a:hover {
 @media (max-width: 600px) {
 
 
-    .pedro{
+    .cvText {
+        font-size: 18px;
+        left: 0;
+        margin-left: 5%;
+        top: 50px;
+    }
+
+    .CV{
+        margin-top: 100px!important;
+    }
+
+
+    .pedro {
         display: block;
     }
 
@@ -365,16 +409,18 @@ a:hover {
     }
 
 
-    .imageGrid, .imageGridEx {
+    .imageGrid,
+    .imageGridEx {
         width: 95%;
         margin: auto;
         column-count: 1;
         margin-top: calc(55px + 1%);
     }
 
-    
 
-    .imageGrid img, .imageGridEx {
+
+    .imageGrid img,
+    .imageGridEx {
         margin-bottom: 1%;
     }
 
@@ -458,7 +504,8 @@ a:hover {
         /* background-color: red */
     }
 
-    .imageGrid , .imageGridEx{
+    .imageGrid,
+    .imageGridEx {
         column-count: 1;
     }
 }
@@ -469,7 +516,8 @@ a:hover {
         /* background-color: blue */
     }
 
-    .imageGrid , .imageGridEx{
+    .imageGrid,
+    .imageGridEx {
         column-count: 2;
     }
 }
@@ -483,7 +531,8 @@ a:hover {
     .imageGrid {
         column-count: 3;
     }
-    .imageGridEx{
+
+    .imageGridEx {
         column-count: 2;
     }
 }
@@ -499,7 +548,7 @@ a:hover {
         column-count: 4;
     }
 
-    .imageGridEx{
+    .imageGridEx {
         column-count: 2;
     }
 }
